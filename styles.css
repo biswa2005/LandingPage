@@ -176,6 +176,7 @@
     }
 
     .tech-stack {
+      cursor: pointer;
       padding: 34px;
         width: 55vw;
       margin-bottom: 2.5rem;
@@ -687,6 +688,9 @@
       position: relative;
     }
 
+    .portfolio{
+      text-decoration: none;
+    }
     .projects::before {
       content: '';
       position: absolute;
@@ -712,6 +716,7 @@
     }
 
     .project-card {
+      cursor: pointer;
       background: var(--bg-secondary);
       border-radius: 12px;
       overflow: hidden;

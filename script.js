@@ -44,11 +44,16 @@ document
   });
 
 // Download CV function
+// ...existing code...
 function downloadCV() {
-  window.location.href = "./cv.pdf";
-  alert("Download CV clicked! (This is a demo, no actual file is downloaded.)");
-  // In a real implementation, replace with: window.location.href = 'path/to/your-cv.pdf';
+  const link = document.createElement("a");
+  link.href = "./cv.pdf"; // Ensure cv.pdf is in your project root or update the path
+  link.download = "BiswarupBiswas_cv.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
+// ...existing code...
 
 // Chatbot functionality
 const chatbotWindow = document.getElementById("chatbot-window");
