@@ -1,3 +1,5 @@
+
+
 // Theme toggle functionality
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
@@ -44,7 +46,6 @@ document
   });
 
 // Download CV function
-// ...existing code...
 function downloadCV() {
   const link = document.createElement("a");
   link.href = "./cv.pdf"; // Ensure cv.pdf is in your project root or update the path
@@ -53,7 +54,6 @@ function downloadCV() {
   link.click();
   document.body.removeChild(link);
 }
-// ...existing code...
 
 // Chatbot functionality
 const chatbotWindow = document.getElementById("chatbot-window");
@@ -74,8 +74,12 @@ const responses = {
     "Check out the projects section above to see my work! I’ve built some cool stuff like web apps and responsive sites.",
   contact:
     "You can reach me via the contact form above or just keep chatting here!",
+  skills: "I am skilled in JavaScript, HTML, CSS, and React. Want to know more?",
+  cv: "You can download my CV using the 'Download CV' button above.",
+  thanks: "You're welcome! Let me know if you have more questions.",
+  help: "Try asking about my projects, skills, or how to contact me.",
   default:
-    "Hmm, not sure about that one. Try asking about my projects or how to contact me!",
+    "Hmm, not sure about that one. Try asking about my projects, skills, or how to contact me!",
 };
 
 // Send message and get bot response
@@ -107,6 +111,14 @@ chatbotInput.addEventListener("keypress", (e) => {
     sendMessage();
   }
 });
+
+// Clear chat functionality
+const chatbotClear = document.getElementById("chatbot-clear");
+if (chatbotClear) {
+  chatbotClear.addEventListener("click", () => {
+    chatbotMessages.innerHTML = "";
+  });
+}
 
 // Section fade-in on scroll
 const sections = document.querySelectorAll("section");
