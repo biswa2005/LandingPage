@@ -9,6 +9,8 @@
 </head>
 <body>
   <!-- Navigation -->
+
+ 
   <nav>
     <div class="nav-container">
       <div class="logo"> <img src="./logo.jpg" alt="" srcset=""></div>
@@ -26,6 +28,18 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Hi, I'm Biswarup Biswas</h1>
+       <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://github.com/biswa2005" target="_blank" rel="noopener" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/github.svg" alt="GitHub" style="width:28px;height:28px;">
+    </a>
+    <a href="https://www.linkedin.com/in/biswarup-biswas-625463319" target="_blank" rel="noopener" title="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="LinkedIn" style="width:28px;height:28px;">
+    </a>
+    <a href="https://x.com/biswarup10183" target="_blank" rel="noopener" title="Twitter">
+      <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/90/twitterx--v1.png" alt="twitterx--v1"/>
+    </a>
+  </div>
       <div class="tech-stack">
           <span class="react"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg" alt="React"> React</span>
           <span class="redux"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/redux.svg" alt="Redux"> Redux</span>
@@ -95,11 +109,14 @@
     <div class="chatbot-window" id="chatbot-window">
       <div class="chatbot-header">Chat with Me</div>
       <div class="chatbot-messages" id="chatbot-messages">
+        <button id="chatbot-clear">Clear Chat</button>
         <div class="chatbot-message bot">Hello! How can I help you today?</div>
       </div>
       <div class="chatbot-input">
         <input type="text" id="chatbot-input" placeholder="Type a message...">
         <button onclick="sendMessage()">Send</button>
+        <!-- Place this near your chatbot input or header -->
+
       </div>
     </div>
   </div>
