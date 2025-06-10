@@ -1,125 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Navigation -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
 
- 
-  <nav>
-    <div class="nav-container">
-      <div class="logo"> <img src="./logo.jpg" alt="" srcset=""></div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" id="theme-toggle">☀️</button>
+    <nav>
+      <div class="nav-container">
+        <div class="logo"><img src="./logo.jpg" alt="" srcset="" /></div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" id="theme-toggle">☀️</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Biswarup Biswas</h1>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a
+            href="https://github.com/biswa2005"
+            target="_blank"
+            rel="noopener"
+            title="GitHub"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/github.svg"
+              alt="GitHub"
+              style="width: 28px; height: 28px"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/biswarup-biswas-625463319"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg"
+              alt="LinkedIn"
+              style="width: 28px; height: 28px"
+            />
+          </a>
+          <a
+            href="https://x.com/biswarup10183"
+            target="_blank"
+            rel="noopener"
+            title="Twitter"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/90/twitterx--v1.png"
+              alt="twitterx--v1"
+            />
+          </a>
+        </div>
+        <div class="tech-stack">
+          <span class="react"
+            ><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg"
+              alt="React"
+            />
+            React</span
+          >
+          <span class="redux"
+            ><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/redux.svg"
+              alt="Redux"
+            />
+            Redux</span
+          >
+          <span class="node"
+            ><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nodedotjs.svg"
+              alt="Node.js"
+            />
+            Node.js</span
+          >
+          <span class="python"
+            ><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/python.svg"
+              alt="Python"
+            />
+            Python</span
+          >
+          <span class="mern"
+            ><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/mongodb.svg"
+              alt="MERN Stack"
+            />
+            MERN Stack</span
+          >
+          <span class="tailwind"
+            ><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tailwindcss.svg"
+              alt="Tailwind CSS"
+            />
+            Tailwind CSS</span
+          >
+        </div>
+        <p>Full Stack Web Developer</p>
+        <div class="button-group">
+          <a href="#projects">View My Work</a>
+          <a href="#" onclick="downloadCV()">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="./3.jpeg" alt="Profile" />
+        <p>
+          I'm a passionate developer with a love for creating intuitive and
+          visually stunning web experiences. With expertise in React, Node.js,
+          Python, and the MERN stack, I build responsive and user-friendly
+          applications that leave a lasting impression.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="./paytm.jpg" alt="Project 1" />
+          <h3>Paytm Clone</h3>
+          <p>
+            A web application built with modern technologies to solve real-world
+            problems.
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="./calorie-tracker.png"
+            alt="Project 2"
+            href="https://calorie-tracker-zeta-eight.vercel.app/"
+          />
+          <h3>Calorie-Tracker</h3>
+          <p>
+            An AI powered web app that recognises the food and detect
+            nutritional value(Carbs, Protien, Fat, Calories) of that food.
+          </p>
+        </div>
+        <div class="project-card">
+          <a
+            class="portfolio"
+            href="https://landing-page-five-alpha-58.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="./portfolio.png" alt="Project 3" />
+            <h3>Portfolio Website</h3>
+          </a>
+          <p>A responsive website showcasing creative UI/UX solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+      <button class="chatbot-toggle">💬</button>
+      <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">Chat with Me</div>
+        <div class="chatbot-messages" id="chatbot-messages">
+          <button id="chatbot-clear">Clear Chat</button>
+          <div class="chatbot-message bot">
+            Hello! How can I help you today?
+          </div>
+        </div>
+        <div class="chatbot-input">
+          <input
+            type="text"
+            id="chatbot-input"
+            placeholder="Type a message..."
+          />
+          <button onclick="sendMessage()">Send</button>
+          <!-- Place this near your chatbot input or header -->
+        </div>
       </div>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Biswarup Biswas</h1>
-       <!-- Social Links -->
-  <div class="social-links">
-    <a href="https://github.com/biswa2005" target="_blank" rel="noopener" title="GitHub">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/github.svg" alt="GitHub" style="width:28px;height:28px;">
-    </a>
-    <a href="https://www.linkedin.com/in/biswarup-biswas-625463319" target="_blank" rel="noopener" title="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="LinkedIn" style="width:28px;height:28px;">
-    </a>
-    <a href="https://x.com/biswarup10183" target="_blank" rel="noopener" title="Twitter">
-      <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/90/twitterx--v1.png" alt="twitterx--v1"/>
-    </a>
-  </div>
-      <div class="tech-stack">
-          <span class="react"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg" alt="React"> React</span>
-          <span class="redux"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/redux.svg" alt="Redux"> Redux</span>
-          <span class="node"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nodedotjs.svg" alt="Node.js"> Node.js</span>
-          <span class="python"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/python.svg" alt="Python"> Python</span>
-          <span class="mern"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/mongodb.svg" alt="MERN Stack"> MERN Stack</span>
-          <span class="tailwind"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tailwindcss.svg" alt="Tailwind CSS"> Tailwind CSS</span>
-
-      </div>
-      <p>Full Stack Web Developer</p>
-      <div class="button-group">
-        <a href="#projects">View My Work</a>
-        <a href="#" onclick="downloadCV()">Download CV</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="./3.jpeg" alt="Profile">
-      <p>
-        I'm a passionate developer with a love for creating intuitive and visually stunning web experiences. With expertise in React, Node.js, Python, and the MERN stack, I build responsive and user-friendly applications that leave a lasting impression.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="./paytm.jpg" alt="Project 1">
-        <h3>Paytm Clone</h3>
-        <p>A web application built with modern technologies to solve real-world problems.</p>
-      </div>
-      <div class="project-card">
-        <img src="./jarvis.jpg" alt="Project 2">
-        <h3>Jarvis</h3>
-        <p>An AI powered chatbot application that provides instant support and information.</p>
-      </div>
-      <div class="project-card">
-        <a class="portfolio" href="https://landing-page-five-alpha-58.vercel.app/" target="_blank" rel="noopener">
-          <img src="./portfolio.png" alt="Project 3">
-          <h3>Portfolio Website</h3>
-        </a>
-        <p>A responsive website showcasing creative UI/UX solutions.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="6" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Chatbot -->
-  <div class="chatbot-container">
-    <button class="chatbot-toggle">💬</button>
-    <div class="chatbot-window" id="chatbot-window">
-      <div class="chatbot-header">Chat with Me</div>
-      <div class="chatbot-messages" id="chatbot-messages">
-        <button id="chatbot-clear">Clear Chat</button>
-        <div class="chatbot-message bot">Hello! How can I help you today?</div>
-      </div>
-      <div class="chatbot-input">
-        <input type="text" id="chatbot-input" placeholder="Type a message...">
-        <button onclick="sendMessage()">Send</button>
-        <!-- Place this near your chatbot input or header -->
-
-      </div>
-    </div>
-  </div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
