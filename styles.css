@@ -737,7 +737,7 @@ nav {
   position: relative;
 }
 
-.portfolio {
+.portfolio, .calorie {
   text-decoration: none;
 }
 .projects::before {
